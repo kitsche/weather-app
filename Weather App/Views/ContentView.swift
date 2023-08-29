@@ -39,8 +39,8 @@ struct ContentView: View {
             
             
         }
-        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 0.673, saturation: 0.885, brightness: 0.441)/*@END_MENU_TOKEN@*/)
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.purple/*@END_MENU_TOKEN@*/)
         
     }
 }
