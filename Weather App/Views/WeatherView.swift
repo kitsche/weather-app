@@ -33,10 +33,10 @@ struct WeatherView: View {
                         }
                         .frame(width: 150, alignment: .leading)
                         
-                        Spacer()
+//                        Spacer()
                         
                         Text(weather.main.feelsLike.roundDouble() + "°")
-                            .font(.system(size: 100))
+                            .font(.system(size: 90))
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .padding()
                     }
@@ -75,7 +75,7 @@ struct WeatherView: View {
                     HStack {
                         WeatherRow(logo: "wind", name: "Wind speed", value: weather.wind.speed.roundDouble() + "m/s")
                         Spacer()
-                        WeatherRow(logo: "humidity", name: "Max temp", value: weather.main.humidity.roundDouble() + "%")
+                        WeatherRow(logo: "humidity", name: "Humidity", value: weather.main.humidity.roundDouble() + "%")
                     }
                 }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
